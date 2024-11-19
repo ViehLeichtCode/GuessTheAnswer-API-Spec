@@ -122,6 +122,9 @@ paths:
                 selectedAnswer:
                   type: long
                   description: the id of the selected answer of the current question
+      responses:
+        "200":
+          description: OK
 
   /leave-game:
     post:

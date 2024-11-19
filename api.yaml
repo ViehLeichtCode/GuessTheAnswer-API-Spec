@@ -12,8 +12,16 @@ paths:
         content:
           application/json:
             schema:
-              type: string
-              description: Name of the game creator
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name of the game creator
+                categories:
+                  type: array
+                  description: The selected question categories
+                  items:
+                    type: string
       responses:
         "200":
           description: OK

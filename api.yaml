@@ -28,8 +28,14 @@ paths:
           content:
             application/json:
               schema:
-                type: string
-                description: Game ID
+                type: object
+                properties:
+                  gameId:
+                    type: string
+                    description: Game ID (The Game ID is a unique identifier of a game)
+                  sessionId: string
+                    type: string
+                    description: Session ID (The Session ID is a unique identifier of the connection between client and server)
         "400":
           description: Game ID Missing
         "500":

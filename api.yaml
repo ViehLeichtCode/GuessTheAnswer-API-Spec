@@ -33,7 +33,7 @@ paths:
                   gameId:
                     type: string
                     description: Game ID (The Game ID is a unique identifier of a game)
-                  sessionId: string
+                  sessionId:
                     type: string
                     description: Session ID (The Session ID is a unique identifier of the connection between client and server)
         "400":

@@ -41,6 +41,20 @@ paths:
         "500":
           description: Server Fehler
 
+  /check-gameId:
+    get:
+      parameters:
+        - name: gameId
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: The Game ID exists
+        "400":
+          description: The Game ID does not exist
+
   /join-game/{game-id}:
     post:
       requestBody:
